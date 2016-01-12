@@ -27,14 +27,14 @@ export class WrappyText extends Component {
             delay = fps > 0 ? 1000/fps : 0; // delay between changes
 
         this.setState({
-            len: len,
+            len,
             rLen: props.replacements.length,
             currentText: props.replacements[0] || '_',
             notDoneCount: len,
             last: this.getTime(),
-            delay: delay,
-            chars: chars,
-            done: done
+            delay,
+            chars,
+            done
         });
 
         if (this.interval) {
@@ -112,8 +112,8 @@ export class WrappyText extends Component {
             currentText = chars.join('');
 
             this.setState({
-                currentText: currentText,
-                notDoneCount: notDoneCount,
+                currentText,
+                notDoneCount,
                 done: flags
             });
 
@@ -139,7 +139,7 @@ WrappyText.defaultProps = {
     replacements: '$$$$$$$$$$$$$$$$$$$\\\\___+-_', // '$' does not render
     fps: 40, // frames per second
     factor: 0.8, // the greater the factor, longer time needed to settle
-    onProgress: function() {} // on progress callback
+    onProgress() {} // on progress callback
 };
 
 WrappyText.propTypes = {

@@ -6,7 +6,7 @@ import { ScrollListener } from './components/ScrollListener.js';
 
 const BUTTON_TEXT = 'Do it again!';
 
-require("./styles/main.css");
+require('./styles/main.css');
 
 const texts = [
         'This is the wrappy text.',
@@ -58,7 +58,7 @@ export class App extends Component {
                 {/* title */}
 
                 <TextRotator texts={texts}>
-                    <WrappyText className='reveal wrappy title-text red title' ref='title'>{this.state.text}</WrappyText>
+                    <WrappyText className='reveal wrappy title-text red title' ref='title'></WrappyText>
                 </TextRotator>
 
                 <div className='separator' />
@@ -188,7 +188,7 @@ export class App extends Component {
 
     componentDidMount() {
         // a touch of reveal animation
-        window.sr = ScrollReveal();
+        window.sr = new ScrollReveal();
         sr.reveal('.reveal');
     }
 }
