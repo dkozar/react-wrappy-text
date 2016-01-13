@@ -35,7 +35,7 @@ For more info on React hot-loader, take a look into [this fantastic video](https
 ```bash
 npm run build
 ```
-This should build the *dist* folder. This is how the [demo](https://github.com/dkozar/react-wrappy-text/) is built <sup>[1](#footnote1)</sup>.
+This should build the *dist* folder. This is how the [demo](http://dkozar.github.io/react-wrappy-text/) is built <sup>[1](#footnote1)</sup>.
 
 ### :helicopter: Run the non-minified production build
 
