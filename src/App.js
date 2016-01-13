@@ -6,6 +6,8 @@ import { ScrollListener } from './components/ScrollListener.js';
 
 const BUTTON_TEXT = 'Do it again!';
 
+require('./styles/main.css');
+
 const texts = [
         'This is the wrappy text.',
         'Wrappy text is the next <h1>.',
