@@ -6,8 +6,6 @@ import { ScrollListener } from './components/ScrollListener.js';
 
 const BUTTON_TEXT = 'Do it again!';
 
-require("./styles/main.css");
-
 const texts = [
         'This is the wrappy text.',
         'Wrappy text is the next <h1>.',
@@ -58,7 +56,7 @@ export class App extends Component {
                 {/* title */}
 
                 <TextRotator texts={texts}>
-                    <WrappyText className='reveal wrappy title-text red title' ref='title'>{this.state.text}</WrappyText>
+                    <WrappyText className='reveal wrappy title-text red title' ref='title'></WrappyText>
                 </TextRotator>
 
                 <div className='separator' />

@@ -91,7 +91,7 @@ export class TextRotator extends Component {
         var self = this;
 
         return React.Children.map(this.props.children, function (child) {
-            if (child.type.displayName === 'WrappyText') {
+            if (child.type === WrappyText) {
                 return React.cloneElement(child, {
                     children: self.state.text
                 });
