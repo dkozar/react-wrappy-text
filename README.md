@@ -30,7 +30,7 @@ open http://localhost:3000
 
 This will give you the build that will partially update the browser via *webpack* whenever you save the edited source file (and keep the React component state *intact*).
 
-For more info on React hot-loader, take a look into [this fantastic video](https://www.youtube.com/watch?v=xsSnOQynTHs). 
+For more info on React hot-loader, take a look into [this fantastic video](https://www.youtube.com/watch?v=xsSnOQynTHs).
 
 ### :airplane: Run the minified production build
 

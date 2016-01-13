@@ -188,7 +188,7 @@ export class App extends Component {
 
     componentDidMount() {
         // a touch of reveal animation
-        window.sr = ScrollReveal();
+        window.sr = new ScrollReveal();
         sr.reveal('.reveal');
     }
 }
