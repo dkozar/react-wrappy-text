@@ -36,6 +36,7 @@ export class App extends Component {
         this.onProgress = this.onProgress.bind(this);
 
         this.count = 0;
+        this.count2 = 0;
     }
 
     changeText() {
@@ -46,9 +47,9 @@ export class App extends Component {
     }
 
     changeLongText() {
-        this.count ++;
+        this.count2 ++;
         this.setState({
-            longText: longTexts[this.count % longTexts.length]
+            longText: longTexts[this.count2 % longTexts.length]
         });
     }
 
