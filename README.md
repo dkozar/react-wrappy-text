@@ -11,6 +11,41 @@ Just as a proof of concept, and because I like the effect.
 
 http://dkozar.github.io/react-wrappy-text/
 
+## :zap: Usage
+
+```js
+// ES6
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import WrappyText from 'react-wrappy-text';
+
+export class App extends Component {
+
+    onProgress(info) {
+        var progress = info.done / info.total;
+        console.log('Progress: ' + 100 * progress + '%');
+    }
+
+    render() {
+        return (
+            <div>
+                <WrappyText>This is the default wrappy text.</WrappyText>
+
+                <WrappyText
+                    replacements='$$$$$$$$$$$$$$$$$$$\\\\___+-_'
+                    fps={40}
+                    factor={0.8}
+                    onProgress={this.onProgress}>
+                    This is the configured wrappy text.
+                </WrappyText>
+            </div>
+        );
+    }
+}
+
+render(<App />, document.body);
+```
+
 ## :truck: Installation
 
 ```bash
