@@ -32,6 +32,7 @@ export class App extends Component {
         };
 
         this.changeText = this.changeText.bind(this);
+        this.changeLongText = this.changeLongText.bind(this);
         this.onProgress = this.onProgress.bind(this);
 
         this.count = 0;
@@ -40,7 +41,13 @@ export class App extends Component {
     changeText() {
         this.count ++;
         this.setState({
-            text: texts[this.count % texts.length],
+            text: texts[this.count % texts.length]
+        });
+    }
+
+    changeLongText() {
+        this.count ++;
+        this.setState({
             longText: longTexts[this.count % longTexts.length]
         });
     }
@@ -104,7 +111,7 @@ export class App extends Component {
 
                 <div ref='progress-big' className='reveal progress purple' />
 
-                <button className='reveal button purple' onClick={this.changeText}>{BUTTON_TEXT}</button><div className='separator' />
+                <button className='reveal button purple' onClick={this.changeLongText}>{BUTTON_TEXT}</button><div className='separator' />
 
                 <div className='separator' />
 
