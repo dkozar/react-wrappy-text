@@ -25,7 +25,7 @@ export class TextRotator extends Component {
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.onScrollOrResize);
-        window.addEventListener('resize', this.onScrollOrResize);
+        window.removeEventListener('resize', this.onScrollOrResize);
         if (this.interval) {
             this.stop();
         }
