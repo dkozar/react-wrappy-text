@@ -21,11 +21,6 @@ import WrappyText from 'react-wrappy-text';
 
 export class App extends Component {
 
-    onProgress(info) {
-        var progress = info.done / info.total;
-        console.log('Progress: ' + 100 * progress + '%');
-    }
-
     render() {
         return (
             <div>
@@ -40,6 +35,11 @@ export class App extends Component {
                 </WrappyText>
             </div>
         );
+    }
+    
+    onProgress(info) {
+        var progress = info.done / info.total;
+        console.log('Progress: ' + 100 * progress + '%');
     }
 }
 
@@ -83,7 +83,7 @@ This should build the *dist* folder. Non-minified for easier debugging <sup>[1](
 
 <a name="footnote1">1</a>: Use the **gh-pages** branch for building the *prod* version, because its *dist* folder is not *gitignored* (plus few other things).
 
-### :eyeglasses: Differences between *dev* and *prod* builds
+### :mag: Differences between *dev* and *prod* builds
 
 Issue  | Dev | Prod
 ------------- | ------------- | -------------
@@ -95,4 +95,4 @@ Loading styles  | *App.js:* <br /> require('./styles/main.css');  | *index.html:
 
 ## Thanks to:
 
-:rocket: [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) (thanks [Dan Abramov](https://github.com/gaearon)!)
+:rocket: [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) for workflow.
