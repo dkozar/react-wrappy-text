@@ -21,11 +21,6 @@ import WrappyText from 'react-wrappy-text';
 
 export class App extends Component {
 
-    onProgress(info) {
-        var progress = info.done / info.total;
-        console.log('Progress: ' + 100 * progress + '%');
-    }
-
     render() {
         return (
             <div>
@@ -40,6 +35,11 @@ export class App extends Component {
                 </WrappyText>
             </div>
         );
+    }
+    
+    onProgress(info) {
+        var progress = info.done / info.total;
+        console.log('Progress: ' + 100 * progress + '%');
     }
 }
 
