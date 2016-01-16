@@ -24,7 +24,7 @@ export class ScrollListener extends Component {
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.onScrollOrResize);
-        window.addEventListener('resize', this.onScrollOrResize);
+        window.removeEventListener('resize', this.onScrollOrResize);
     }
 
     componentWillReceiveProps (nextProps) {
