@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/react-wrappy-text.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-wrappy-text)
+
 # React Wrappy Text
 "Unwrapping" text component for React.
 
