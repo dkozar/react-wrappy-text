@@ -1,6 +1,6 @@
 {
   "name": "react-wrappy-text",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Wrappy text component for React",
   "scripts": {
     "clean": "rimraf dist",
@@ -11,6 +11,7 @@
     "dist:build": "bash build.sh",
     "dist:webpack": "NODE_ENV=production webpack --config webpack.config.dist.js",
     "dist": "npm run clean && npm run dist:build && npm run dist:webpack",
+    "build": "npm run dist && npm run demo",
     "start": "node devServer.js",
     "lint": "eslint src"
   },
