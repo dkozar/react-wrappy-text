@@ -52,7 +52,7 @@ render(<App />, document.body);
 
 ## :truck: Installation
 
-### Use it as NPM package:
+### Use it as the NPM package:
 
 ```bash
 npm install react-wrappy-text --save
