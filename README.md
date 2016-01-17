@@ -56,7 +56,7 @@ cd react-wrappy-text
 npm install
 ```
 
-Note: *npm install* will install all the dependencies (and their dependencies) into the *node_modules* folder.
+*npm install* will install all the dependencies (and their dependencies) into the *node_modules* folder.
 
 ### :rocket: Run the hot-loader build (local)
 
@@ -65,35 +65,24 @@ npm start
 open http://localhost:3000
 ```
 
-This will give you the build that will partially update the browser via *webpack* whenever you save the edited source file (and keep the React component state *intact*).
+This will give you the build that will partially update the browser via *webpack* whenever you save the edited source file.
+Additionally, it will keep the React component state *intact*.
 
 For more info on React hot-loader, take a look into [this fantastic video](https://www.youtube.com/watch?v=xsSnOQynTHs).
 
 ### :airplane: Run the minified production build
 
 ```bash
-npm run build
+npm run demo
 ```
-This should build the *dist* folder. This is how the [demo](http://dkozar.github.io/react-wrappy-text/) is built <sup>[1](#footnote1)</sup>.
+This should build the *demo* folder. This is how the [demo](http://dkozar.github.io/react-wrappy-text/) is built.
 
-### :helicopter: Run the non-minified production build
+### :helicopter: Run the non-minified demo build
 
 ```bash
-npm run max
+npm run demo-max
 ```
-This should build the *dist* folder. Non-minified for easier debugging <sup>[1](#footnote1)</sup>.
-
-<a name="footnote1">1</a>: Use the **gh-pages** branch for building the *prod* version, because its *dist* folder is not *gitignored* (plus few other things).
-
-### :mag: Differences between *dev* and *prod* builds
-
-Issue  | Dev | Prod
-------------- | ------------- | -------------
-*dist* folder | doesn't have one | has one
-.gitignore  | ignores *dist* folder  | does not ignore *dist* folder
-Javascript path  | *index.html:* <br /> ./**static**/bundle.js  | *index.html:* <br /> ./**dist**/bundle.js
-Loading styles  | *App.js:* <br /> require('./styles/main.css');  | *index.html:* <br /> link rel="stylesheet" type="text/css" href="./src/styles/main.css"
-
+This should build the *demo* folder. Non-minified for easier debugging.
 
 ## Thanks to:
 

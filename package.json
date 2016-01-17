@@ -4,10 +4,13 @@
   "description": "Wrappy text component for React",
   "scripts": {
     "clean": "rimraf dist",
-    "max:webpack": "NODE_ENV=production webpack --config webpack.config.max.js",
-    "max": "npm run clean && npm run max:webpack",
-    "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
+    "demo-max:webpack": "NODE_ENV=production webpack --config webpack.config.demo-max.js",
+    "demo-max": "npm run clean && npm run demo-max:webpack",
+    "demo:webpack": "NODE_ENV=production webpack --config webpack.config.demo.js",
+    "demo": "npm run clean && npm run demo:webpack",
+    "dist:build": "bash build.sh",
+    "dist:webpack": "NODE_ENV=production webpack --config webpack.config.dist.js",
+    "dist": "npm run clean && npm run dist:build && npm run dist:webpack",
     "start": "node devServer.js",
     "lint": "eslint src"
   },
@@ -31,6 +34,7 @@
   },
   "homepage": "https://github.com/dkozar/react-wrappy-text",
   "devDependencies": {
+    "babel-cli": "^6.4.0",
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
     "babel-loader": "^6.2.0",
@@ -43,6 +47,7 @@
     "eslint-plugin-react": "^3.11.3",
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^1.0.1",
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9",

@@ -1,3 +1,3 @@
-module.exports = require('./src/components/WrappyText');
-module.exports.TextRotator = require('./src/components/TextRotator');
-module.exports.ScrollListener = require('./src/components/ScrollListener');
+module.exports = require('./build/components/WrappyText');
+module.exports.TextRotator = require('./build/components/TextRotator');
+module.exports.ScrollListener = require('./build/components/ScrollListener');
