@@ -95,7 +95,7 @@ This should build the *demo* folder. This is how the [demo](http://dkozar.github
 ### :helicopter: Run the non-minified demo build
 
 ```bash
-npm run demo-max
+npm run debug
 ```
 This should build the *demo* folder. Non-minified for easier debugging.
 

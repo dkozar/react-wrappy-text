@@ -5,7 +5,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.WrappyText = undefined;
 
 var _index = require('/workspace/react-wrappy-text/node_modules/babel-preset-react-hmre/node_modules/redbox-react/lib/index.js');
 
@@ -57,7 +56,7 @@ function _wrapComponent(id) {
     };
 }
 
-var WrappyText = exports.WrappyText = _wrapComponent('WrappyText')(function (_Component) {
+var WrappyText = _wrapComponent('WrappyText')(function (_Component) {
     _inherits(WrappyText, _Component);
 
     function WrappyText(props) {
@@ -210,6 +209,8 @@ var WrappyText = exports.WrappyText = _wrapComponent('WrappyText')(function (_Co
 
     return WrappyText;
 }(_react2.Component));
+
+exports.default = WrappyText;
 
 WrappyText.defaultProps = {
     children: '', // final text

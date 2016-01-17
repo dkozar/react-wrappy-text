@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { WrappyText } from './WrappyText.js';
+import WrappyText from './WrappyText.js';
 import { intersects } from '../util/rect.js';
 
-export class ScrollListener extends Component {
+export default class ScrollListener extends Component {
 
     constructor(props) {
         super(props);

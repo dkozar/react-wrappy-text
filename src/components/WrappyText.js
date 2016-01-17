@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class WrappyText extends Component {
+export default class WrappyText extends Component {
 
     constructor(props) {
         super(props);

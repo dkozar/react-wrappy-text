@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { WrappyText } from './WrappyText.js';
+import WrappyText from './WrappyText.js';
 import { intersects } from '../util/rect.js';
 
-export class TextRotator extends Component {
+export default class TextRotator extends Component {
 
     constructor(props) {
         super(props);

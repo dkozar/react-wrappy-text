@@ -5,7 +5,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.TextRotator = undefined;
 
 var _index = require('/workspace/react-wrappy-text/node_modules/babel-preset-react-hmre/node_modules/redbox-react/lib/index.js');
 
@@ -28,6 +27,8 @@ var _reactDom = require('react-dom');
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _WrappyText = require('./WrappyText.js');
+
+var _WrappyText2 = _interopRequireDefault(_WrappyText);
 
 var _rect = require('../util/rect.js');
 
@@ -65,7 +66,7 @@ function _wrapComponent(id) {
     };
 }
 
-var TextRotator = exports.TextRotator = _wrapComponent('TextRotator')(function (_Component) {
+var TextRotator = _wrapComponent('TextRotator')(function (_Component) {
     _inherits(TextRotator, _Component);
 
     function TextRotator(props) {
@@ -166,7 +167,7 @@ var TextRotator = exports.TextRotator = _wrapComponent('TextRotator')(function (
             var self = this;
 
             return _react3.default.Children.map(this.props.children, function (child) {
-                if (child.type === _WrappyText.WrappyText) {
+                if (child.type === _WrappyText2.default) {
                     return _react3.default.cloneElement(child, {
                         children: self.state.text
                     });
@@ -179,6 +180,8 @@ var TextRotator = exports.TextRotator = _wrapComponent('TextRotator')(function (
 
     return TextRotator;
 }(_react2.Component));
+
+exports.default = TextRotator;
 
 TextRotator.defaultProps = {
     texts: []

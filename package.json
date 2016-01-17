@@ -1,11 +1,11 @@
 {
   "name": "react-wrappy-text",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wrappy text component for React",
   "scripts": {
     "clean": "rimraf dist",
-    "demo-max:webpack": "NODE_ENV=production webpack --config webpack.config.demo-max.js",
-    "demo-max": "npm run clean && npm run demo-max:webpack",
+    "debug:webpack": "NODE_ENV=production webpack --config webpack.config.debug.js",
+    "debug": "npm run clean && npm run debug:webpack",
     "demo:webpack": "NODE_ENV=production webpack --config webpack.config.demo.js",
     "demo": "npm run clean && npm run demo:webpack",
     "dist:build": "bash build.sh",

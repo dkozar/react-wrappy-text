@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { WrappyText } from './components/WrappyText.js';
-import { TextRotator } from './components/TextRotator.js';
-import { ScrollListener } from './components/ScrollListener.js';
+import WrappyText from './components/WrappyText.js';
+import TextRotator from './components/TextRotator.js';
+import ScrollListener from './components/ScrollListener.js';
 
 const BUTTON_TEXT = 'Do it again!';
 
