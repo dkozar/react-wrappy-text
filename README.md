@@ -5,7 +5,7 @@
 # React Wrappy Text
 "Unwrapping" text component for React.
 
-![Wrappy Text!](http://dankokozar.com/images/wrappy.png)
+[![Wrappy Text!](http://dankokozar.com/images/wrappy.png)](http://dkozar.github.io/react-wrappy-text/)
 
 Ported my old [eDriven.Gui](https://github.com/dkozar/edriven-gui/blob/master/eDriven.Playground/Unity/Assets/eDriven/Demo/_shared/Code/Components/TitleLabel.cs) component, originally written in C# (for Unity3d game engine).
 
