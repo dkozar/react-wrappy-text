@@ -6,21 +6,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _index = require('/workspace/react-wrappy-text/node_modules/babel-preset-react-hmre/node_modules/redbox-react/lib/index.js');
+var _react = require('react');
 
-var _index2 = _interopRequireDefault(_index);
-
-var _index3 = require('/workspace/react-wrappy-text/node_modules/babel-preset-react-hmre/node_modules/react-transform-catch-errors/lib/index.js');
-
-var _index4 = _interopRequireDefault(_index3);
-
-var _react2 = require('react');
-
-var _react3 = _interopRequireDefault(_react2);
-
-var _index5 = require('/workspace/react-wrappy-text/node_modules/babel-preset-react-hmre/node_modules/react-transform-hmr/lib/index.js');
-
-var _index6 = _interopRequireDefault(_index5);
+var _react2 = _interopRequireDefault(_react);
 
 var _reactDom = require('react-dom');
 
@@ -40,33 +28,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var _components = {
-    TextRotator: {
-        displayName: 'TextRotator'
-    }
-};
-
-var _workspaceReactWrappyTextNode_modulesBabelPresetReactHmreNode_modulesReactTransformHmrLibIndexJs2 = (0, _index6.default)({
-    filename: 'src/components/TextRotator.js',
-    components: _components,
-    locals: [module],
-    imports: [_react3.default]
-});
-
-var _workspaceReactWrappyTextNode_modulesBabelPresetReactHmreNode_modulesReactTransformCatchErrorsLibIndexJs2 = (0, _index4.default)({
-    filename: 'src/components/TextRotator.js',
-    components: _components,
-    locals: [],
-    imports: [_react3.default, _index2.default]
-});
-
-function _wrapComponent(id) {
-    return function (Component) {
-        return _workspaceReactWrappyTextNode_modulesBabelPresetReactHmreNode_modulesReactTransformHmrLibIndexJs2(_workspaceReactWrappyTextNode_modulesBabelPresetReactHmreNode_modulesReactTransformCatchErrorsLibIndexJs2(Component, id), id);
-    };
-}
-
-var TextRotator = _wrapComponent('TextRotator')(function (_Component) {
+var TextRotator = function (_Component) {
     _inherits(TextRotator, _Component);
 
     function TextRotator(props) {
@@ -155,7 +117,7 @@ var TextRotator = _wrapComponent('TextRotator')(function (_Component) {
     }, {
         key: 'render',
         value: function render() {
-            return _react3.default.createElement(
+            return _react2.default.createElement(
                 'div',
                 { className: this.props.className },
                 this.renderChildren()
@@ -166,9 +128,9 @@ var TextRotator = _wrapComponent('TextRotator')(function (_Component) {
         value: function renderChildren() {
             var self = this;
 
-            return _react3.default.Children.map(this.props.children, function (child) {
+            return _react2.default.Children.map(this.props.children, function (child) {
                 if (child.type === _WrappyText2.default) {
-                    return _react3.default.cloneElement(child, {
+                    return _react2.default.cloneElement(child, {
                         children: self.state.text
                     });
                 } else {
@@ -179,7 +141,7 @@ var TextRotator = _wrapComponent('TextRotator')(function (_Component) {
     }]);
 
     return TextRotator;
-}(_react2.Component));
+}(_react.Component);
 
 exports.default = TextRotator;
 
@@ -188,5 +150,5 @@ TextRotator.defaultProps = {
 };
 
 TextRotator.propTypes = {
-    texts: _react3.default.PropTypes.array
+    texts: _react2.default.PropTypes.array
 };

@@ -9,11 +9,11 @@ module.exports = {
   },
   output: {
     path: __dirname + "/dist",
-    filename: './react-wrappy-text.js',
-    sourceMapFilename: './react-wrappy-text.js.map',
+    filename: './react-liberator.js',
+    sourceMapFilename: './react-liberator.js.map',
     devtoolModuleFilenameTemplate: '../[resource-path]',
     libraryTarget: "umd",
-    library: "ReactWrappyText"
+    library: "ReactLiberator"
   },
   externals: {
     'react': {
@@ -35,24 +35,10 @@ module.exports = {
       'root': 'Lodash'
     }
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
-    }),
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.DedupePlugin(),
-    new webpack.NormalModuleReplacementPlugin(/\/react\/lib\/cloneWithProps/, "../../react-clonewithprops/index.js"),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
-      }
-    })
-  ],
+  plugins: [],
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.jsx?$/,
       loader: "babel-loader",
       exclude: /node_modules/,
       include: path.join(__dirname, 'src')
