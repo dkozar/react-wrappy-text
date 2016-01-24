@@ -72,7 +72,9 @@ npm install
 
 Then, you should run one of the builds.
 
-### :rocket: Run the hot-loader build (local)
+## :factory: Builds
+
+### :rocket: Hot-loader development build
 
 ```bash
 npm start
@@ -85,27 +87,45 @@ Additionally, it will keep the React component state *intact*.
 
 For more info on React hot-loader, take a look into [this fantastic video](https://www.youtube.com/watch?v=xsSnOQynTHs).
 
-### :airplane: Run the minified demo build
+### :helicopter: Demo build
 
 ```bash
 npm run demo
 ```
-This should build the *demo* folder. This is how the [demo](http://dkozar.github.io/react-wrappy-text/) is built.
-
-### :helicopter: Run the non-minified demo build
+This should build the minified *demo* folder (it's how the [demo](http://dkozar.github.io/react-wrappy-text/) is built).
 
 ```bash
 npm run debug
 ```
-This should build the *demo* folder. Non-minified for easier debugging.
+This should build the non-minified *demo* folder (for easier debugging).
 
-You could install the http-server for running the demo builds:
+You could install the http-server for running demo builds in the browser:
 
 ```bash
 npm install http-server
 http-server
 ```
 
-## Thanks to:
+### :steam_locomotive: Additional builds
 
-:rocket: [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) for workflow.
+```bash
+npm run build
+```
+
+Runs Babel on source files (converting ES6 and React to JS) and puts them into the *build* folder.
+
+```bash
+npm run dist
+```
+
+Builds the webpackUniversalModuleDefinition and puts it into the *dist* folder.
+
+```bash
+npm run full
+```
+
+Runs all the builds: *build* + *dist* + *demo*.
+
+## :thumbsup: Thanks to:
+
+:rocket: [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) for the workflow.
