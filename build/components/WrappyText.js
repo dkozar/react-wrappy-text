@@ -174,6 +174,7 @@ var WrappyText = function (_Component) {
 
 exports.default = WrappyText;
 
+
 WrappyText.defaultProps = {
     children: '', // final text
     replacements: '$$$$$$$$$$$$$$$$$$$\\\\___+-_', // '$' does not render

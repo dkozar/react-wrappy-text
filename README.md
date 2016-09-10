@@ -129,3 +129,5 @@ Runs all the builds: *build* + *dist* + *demo*.
 ## :thumbsup: Thanks to:
 
 :rocket: [React Transform Boilerplate](https://github.com/gaearon/react-transform-boilerplate) for the workflow.
+
+[![Downloads!](https://nodei.co/npm-dl/react-wrappy-text.png?months=1)](https://www.npmjs.com/package/react-wrappy-text)
