@@ -112,6 +112,7 @@ var ScrollListener = function (_Component) {
 
 exports.default = ScrollListener;
 
+
 ScrollListener.defaultProps = {
     text: ''
 };

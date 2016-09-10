@@ -145,6 +145,7 @@ var TextRotator = function (_Component) {
 
 exports.default = TextRotator;
 
+
 TextRotator.defaultProps = {
     texts: []
 };
