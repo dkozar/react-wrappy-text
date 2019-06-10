@@ -1,6 +1,6 @@
 {
   "name": "react-wrappy-text",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Wrappy text component for React",
   "scripts": {
     "hot": "node hotServer.js",
